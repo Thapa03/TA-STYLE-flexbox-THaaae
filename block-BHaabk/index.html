@@ -1,13 +1,44 @@
-<!-- 
-1. Create a simple page having a header, main content, and a footer.
-
-2. Inside the header keep the brand name to the left and all the navigation to the right.
-
-4. Inside the main content take an article section having two columns. In the first column put a heading and some introductory text of the article and in the second column take an image.
-
-5. After the article section, take a gallery section, in which there will be two rows and in both the row there will be three columns. Each column must have a different image.
-
-6. After the gallery section footer will come.
-
-7. Use flexbox properties and values to create columns.
- -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF8">
+        <title>Assignment 3</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+     <main>
+      <section class="container">
+       <article>
+        <header>
+          <div class="nav">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Generic</a>
+                <a href="#">Elements</a>
+            </nav>
+          </div>
+          <div>
+            <h1>Welcome to Theory</h1>
+          </div>
+            </header>
+       </article>
+            </section>
+            <section class="container">
+                <article class="article clearfix ">
+                   <div class="hero-article">
+                    <h2>Magna tempus sed ametalquam</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet,
+                        consectetur adipisicing elit.
+                        Illo ea amet maiores vitae similique animi veniam repellat.
+                    </p>
+                    <a class="hero-nav" href="#">More</a>
+                   </div>
+                   <div>
+                    <img src="images.jpeg" alt="cat"/>
+                   </div> 
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
