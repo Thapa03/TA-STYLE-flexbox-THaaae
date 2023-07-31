@@ -1,43 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF8">
-        <title>Assignment 3</title>
+        <meta charset="UTF-8">
+        <title> Exercise 1 | Flexbox</title>
+        <!-- font family -->
+        <link
+         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto+Slabz:wght@600;700&display=swap"
+         rel="stylesheet"
+         />
+         <!--Font Awesome-->
+         <script
+         src="https://kit.fontawesome.com/8bc5acd820.js"
+         crossorigin="anonymous"
+         ></script>
+         <!-- CSS -->
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-     <main>
-      <section class="container">
-       <article>
-        <header>
-          <div class="nav">
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Generic</a>
-                <a href="#">Elements</a>
-            </nav>
-          </div>
-          <div>
-            <h1>Welcome to Theory</h1>
-          </div>
-            </header>
-       </article>
-            </section>
-            <section class="container">
-                <article class="article clearfix ">
-                   <div class="hero-article">
-                    <h2>Magna tempus sed ametalquam</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet,
-                        consectetur adipisicing elit.
-                        Illo ea amet maiores vitae similique animi veniam repellat.
-                    </p>
-                    <a class="hero-nav" href="#">More</a>
-                   </div>
-                   <div>
-                    <img src="images.jpeg" alt="cat"/>
-                   </div> 
+        <header class="header">
+            <div class="container flex">
+                <a class="brand" href="#">
+                    <img src="Logo.jpeg" alt="Brand logo"/>
+                </a>
+                <nav class="nav">
+                    <a href="#">Home</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Gallery</a>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <!--Article-->
+            <section class="article-section">
+                <article class="container flex">
+                    <div class="col-1-2">
+                        <h1 class="article-heading"> This is our Heading</h1>
+                        <p class="article-text">
+                            Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Ab dolores porro accusamus dicta eos 
+                            incidunt tempora ducimus ut, impedit modi nemo consequatur obcaecati exercitationem numquam! Aliquid tempore cum hic a.
+                            Lorem ipsum dolor sit amet consectetur 
+                        </p>
+                        <p class="article-text">
+                            Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit. Ab dolores porro accusamus dicta eos 
+                            incidunt tempora ducimus ut, impedit modi nemo consequatur obcaecati exercitationem numquam! Aliquid tempore cum hic a.
+                            Lorem ipsum dolor sit amet consectetur 
+                            adipisicing elit.
+                        </p>
+                    </div>
+                    <div class="col-1-2">
+                        <img class="article-img" src="images.jpeg" alt="Cat"/>
+                    </div>
                 </article>
+            </section>
+            <!--Gallery-->
+            <section class="gallery">
+                <div class="container">
+                    <h2 class="heading">Gallery</h2>
+                    <div class="flex">
+                        <div class="col-1-3">
+                            <img src="bear.jpg" alt="bear"/>
+                        </div>
+                        <div class="col-1-3">
+                            <img src="Bike.jpeg" alt="Bike"/>
+                        </div>
+                        <div class="col-1-3">
+                            <img src="Duke.jpeg" alt="Nacked sports"/>
+                        </div>
+                        <div class="col-1-3">
+                            <img src="images.jpeg" alt="Cat"/>
+                        </div>
+                        <div class="col-1-3">
+                            <img src="istockphoto-959966730-612x612.jpg" alt="Nature"/>
+                        </div>
+                        <div class="col-1-3">
+                            <img src="ns8230-image.jpg" alt="Dog"/>
+                        </div>         
+                    </div>
+                </div>
             </section>
         </main>
     </body>
